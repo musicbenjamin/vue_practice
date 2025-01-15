@@ -2,9 +2,9 @@
   <div>
     <h1>Parent Component</h1>
     <ul>
-      <ChildComponent 
-        v-for="item in items" 
-        :key="item.id" 
+      <ChildComponent
+        v-for="item in items"
+        :key="item.id"
         :item="item"
         @item-clicked="handleItemClicked"
       />
@@ -42,8 +42,8 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.items[0].text = 'Hello world';
-    }, 1500)
+      this.items[2].text = 'Hello world';
+    }, 2500)
   }
 };
 </script>
